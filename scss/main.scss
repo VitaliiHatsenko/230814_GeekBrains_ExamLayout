@@ -1,6 +1,39 @@
 @import 'variables';
+@import 'zeroing';
+@import 'fonts';
 
-p {
-  font-family: $font-primary;
-  color: $primary-color;
+.container {
+  width: 1920px;
+  min-height: 1024px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background-image: url(/img/header-image.jpg);
+  background-position: center;
+  padding: 0 374px 0 376px;
+}
+.header {
+}
+.header__top {
+  border: 1px solid #ff0000;
+  display: flex;
+}
+.header__logo {
+  border: 1px solid #f6ff00;
+}
+.header__nav {
+  border: 1px solid #1d00f9;
+  display: flex;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+}
+.header__basket-button {
+}
+.header__search-form {
+}
+.header__carousel {
+  border: 1px solid #ff00bb;
+  min-height: 1024px;
 }
