@@ -1,3 +1,5 @@
+//plugging of the fonts localy with all crossbrowserness
+
 @font-face {
   font-family: raleway;
   src: url('../fonts/raleway/regular/raleway-regular.eot');
@@ -62,6 +64,44 @@
       format('woff2'),
     url('../fonts/montserrat/extra-light/montserrat-extralight.woff')
       format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+// extends of the localy plugged fonts
+
+%font-first-regular {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font-first-medium {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%font-first-semibold {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%font-first-extrabold {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+%font-second-light {
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%font-second-extralight {
+  font-family: 'montserrat', 'arial', sans-serif;
   font-weight: 200;
   font-style: normal;
 }

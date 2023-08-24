@@ -2,34 +2,31 @@
 @import 'zeroing';
 @import 'fonts';
 
-.container {
+// Header styles
+.header {
   width: 1920px;
-  min-height: 1024px;
+  height: 1024px;
   border: 1px solid #000;
   box-sizing: border-box;
-  background-image: url(/img/header-image.jpg);
+  background-image: url(/img/background-images/header-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 374px 0 376px;
   background-blend-mode: darken;
-}
-
-// ------------------ HEADER ------------------
-
-.header {
+  // Header-top
 }
 .header__top {
   border: 1px solid #ff0000;
   display: flex;
   margin: 30px 0 0 0;
+  padding: 0 374px 0 376px;
 }
 .header__logo {
+  @extend %font-first-regular;
+
   border: 1px solid #f6ff00;
   box-sizing: border-box;
-  font-family: 'raleway', 'arial', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
   display: flex;
   margin-top: 8px;
 }
@@ -43,7 +40,7 @@
   line-height: normal;
   letter-spacing: -0.5px;
   text-align: right;
-  color: #fff;
+  color: $color-text-light-primary;
 }
 
 .header__nav {
@@ -67,17 +64,16 @@
 }
 
 .header__item-link {
-  border: 1px solid #ffe600;
-  font-family: 'montserrat', 'arial', sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  @extend %font-second-light;
   object-fit: contain;
   font-size: 14px;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #fff;
+  color: $color-text-light-primary;
+
+  border: 1px solid #ffe600;
 
   display: flex;
 }
@@ -86,33 +82,125 @@
   margin: 3px 22px 11px 31px;
   background: none;
 }
+
 .header__search-form {
   padding: 23px 0 10px 0;
 }
+
+// Header-carousel
 .header__carousel {
   border: 1px solid #ff00bb;
-  // min-width: 1920px;
-  // margin: 0 auto;
+  width: 1920px;
+  min-height: 909px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px 0 150px;
 }
 
 .header__carousel-textbox {
   border: 1px solid #000;
-  // margin: 0 auto;
+  height: 200px;
+  width: 600px;
+  margin: 0 470px 0 470px;
+  color: $color-text-light-primary;
+}
+
+.header__arrow_left {
+  box-sizing: border-box;
+  border: 1px solid #9e0000;
+  height: 80px;
+  width: 45px;
+  margin-top: 352px;
+}
+
+.header__arrow_right {
+  border: 1px solid #0d01b9;
+  height: 80px;
+  width: 45px;
+  margin-top: 352px;
 }
 
 .header__subtitle {
-  font-family: 'raleway', 'arial', sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 .header__title {
-  font-family: 'raleway', 'arial', sans-serif;
-  font-weight: 400;
+  @extend %font-first-extrabold;
+  font-size: 52px;
+  font-stretch: normal;
   font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-text-light-primary;
 }
 .header__text {
 }
 
 input[type='search'] {
   display: none;
+}
+
+.main {
+  width: 1920px;
+}
+
+.activities {
+  height: 373px;
+  border: 1px solid aqua;
+  background-color: $color-icon-primary;
+}
+
+.screenshots {
+  height: 700px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-background-secondary;
+}
+
+.purchase-now {
+  height: 150px;
+  border: 1px solid rgb(0, 255, 4);
+  background-image: linear-gradient(to top, #211b19, #4e3427);
+}
+
+.our-latsest-projects {
+  height: 1160px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-icon-primary;
+}
+.waxom-video-presentation {
+  height: 705px;
+  border: 1px solid rgb(162, 0, 255);
+  background-image: url(/img/background-images/video-presentation.png);
+}
+.excellent-for-mobile {
+  height: 695px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-background-secondary;
+}
+.quantities {
+  height: 300px;
+  border: 1px solid rgb(162, 0, 255);
+  background-image: linear-gradient(to top, #211b19, #4e3427);
+}
+.recent-posts {
+  height: 750px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-icon-primary;
+}
+.logotypes {
+  height: 489px;
+  border: 1px solid rgb(162, 0, 255);
+  background-image: url(/img/background-images/mountanes.png);
+}
+.contacts {
+  height: 508px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-background-tertialy;
+}
+
+.footer {
+  width: 1920px;
+  height: 111px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-background-quaternaly;
 }
