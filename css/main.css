@@ -135,44 +135,50 @@ h6 {
   font-style: normal;
 }
 
-.header__title {
+.header__subtitle {
+  font-family: "raleway", "arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header__button, .header__title {
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
-.header__item-link {
+.header__text, .header__item-link {
   font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   width: 1920px;
   height: 1024px;
   border: 1px solid #000;
   box-sizing: border-box;
-  background-image: url(/img/background-images/header-image.jpg);
+  background-image: url(../img/background-images/header-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: darken;
+  background-color: #555556;
+  background-blend-mode: multiply;
 }
-
 .header__top {
   border: 1px solid #ff0000;
   display: flex;
   margin: 30px 0 0 0;
   padding: 0 374px 0 376px;
 }
-
 .header__logo {
   border: 1px solid #f6ff00;
   box-sizing: border-box;
   display: flex;
   margin-top: 8px;
 }
-
 .header__logo-text {
   margin: 8px 0 15px -20px;
   font-size: 34px;
@@ -184,7 +190,6 @@ h6 {
   text-align: right;
   color: #ffffff;
 }
-
 .header__nav {
   border: 1px solid #1d00f9;
   display: flex;
@@ -192,7 +197,6 @@ h6 {
   padding: 28px;
   min-width: 699px;
 }
-
 .header__list {
   display: flex;
   border: 1px solid #000;
@@ -200,12 +204,10 @@ h6 {
   width: 100%;
   justify-content: space-between;
 }
-
 .header__item {
   border: 1px solid #e90707;
   display: flex;
 }
-
 .header__item-link {
   -o-object-fit: contain;
      object-fit: contain;
@@ -218,16 +220,13 @@ h6 {
   border: 1px solid #ffe600;
   display: flex;
 }
-
 .header__basket-button {
   margin: 3px 22px 11px 31px;
   background: none;
 }
-
 .header__search-form {
   padding: 23px 0 10px 0;
 }
-
 .header__carousel {
   border: 1px solid #ff00bb;
   width: 1920px;
@@ -237,15 +236,19 @@ h6 {
   justify-content: space-between;
   padding: 0 150px 0 150px;
 }
-
 .header__carousel-textbox {
   border: 1px solid #000;
-  height: 200px;
+  min-height: 200px;
   width: 600px;
-  margin: 0 470px 0 470px;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 261px 0 383px 0;
 }
-
+.header__paggination {
+  width: 100%;
+}
 .header__arrow_left {
   box-sizing: border-box;
   border: 1px solid #9e0000;
@@ -253,15 +256,26 @@ h6 {
   width: 45px;
   margin-top: 352px;
 }
-
 .header__arrow_right {
   border: 1px solid #0d01b9;
   height: 80px;
   width: 45px;
   margin-top: 352px;
 }
-
+.header__subtitle {
+  background: #000;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
 .header__title {
+  background: #ccc;
+  margin: 0 auto;
   font-size: 52px;
   font-stretch: normal;
   font-style: normal;
@@ -270,8 +284,47 @@ h6 {
   text-align: center;
   color: #ffffff;
 }
-
-input[type=search] {
+.header__text {
+  background: #827676;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}
+.header__button {
+  width: 170px;
+  height: 53px;
+  margin: 0 auto;
+  background-color: #998675;
+  border-radius: 3px;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 52px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__button:hover {
+  background-color: #ffffff;
+  color: #555555;
+}
+.header__button:active {
+  background-color: #736357;
+  color: #ffffff;
+}
+.header__button:visited {
+  color: #fff;
+}
+.header input[type=search] {
   display: none;
 }
 
@@ -344,4 +397,30 @@ input[type=search] {
   height: 111px;
   border: 1px solid rgb(162, 0, 255);
   background-color: #111111;
+}
+
+.logo {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 181px;
+  text-decoration: none;
+  background-color: #484642;
+  color: #fff;
+}
+
+.logo-svg {
+  fill: currentColor;
+}
+
+.logo-txt {
+  font-family: Raleway;
+  font-size: 34px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: right;
+}
+
+.logo:hover {
+  color: #998675;
 }/*# sourceMappingURL=main.css.map */
