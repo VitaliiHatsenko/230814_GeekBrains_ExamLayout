@@ -129,7 +129,7 @@ h6 {
   font-weight: 200;
   font-style: normal;
 }
-.header__logo {
+.ad__title, .header__logo {
   font-family: "raleway", "arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -141,19 +141,19 @@ h6 {
   font-style: normal;
 }
 
-.activities__item span {
+.screenshots .block-title, .activities__item span {
   font-family: "raleway", "arial", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.header__button, .header__title {
+.ad__button-text, .header__button, .header__title {
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
-.activities__item p, .header__text, .header__item-link {
+.ad__text, .screenshots .block-text, .activities__item p, .header__text, .header__item-link {
   font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -411,15 +411,114 @@ h6 {
 }
 
 .screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 344px 0 344px;
   height: 700px;
   border: 1px solid rgb(162, 0, 255);
   background-color: #fbfaf8;
 }
+.screenshots__text {
+  margin: 0 auto;
+  width: 760px;
+}
+.screenshots .block-title {
+  display: block;
+  margin: 0 auto 14px;
+  color: #555555;
+  -o-object-fit: contain;
+     object-fit: contain;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.screenshots .block-text {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8c8c8c;
+}
+.screenshots__images {
+  width: 100%;
+  min-height: 485px;
+  background-image: url("/img/browser-center@3x.jpg"), url("/img/browser-left@3x.jpg"), url("/img/browser-right@3x.jpg");
+  background-size: 62%, 62%, 62%;
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left, bottom right;
+}
 
-.purchase-now {
+.ad {
   height: 150px;
   border: 1px solid rgb(0, 255, 4);
   background-image: linear-gradient(to top, #211b19, #4e3427);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad__wrapper {
+  margin: 0 470px 0 0;
+}
+
+.ad__title {
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.ad__title span {
+  color: #c7b299;
+}
+
+.ad__text {
+  color: #615855;
+  width: 100%;
+  margin: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.ad__button {
+  width: 170px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 2px solid #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+}
+
+.ad__button-text {
+  color: #ffffff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
 }
 
 .our-latsest-projects {

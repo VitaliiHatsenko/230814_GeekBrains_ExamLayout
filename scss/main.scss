@@ -2,7 +2,7 @@
 @import 'zeroing';
 @import 'fonts';
 
-// Header styles ==================================================
+// ================================================== Header styles
 .header {
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-color: #555556;
   background-blend-mode: multiply;
-  // Header-top ==================================================
+  // ================================================== Header-top
   &__top {
     // border: 1px solid #ff0000;
     display: flex;
@@ -92,7 +92,7 @@
       background-position: right;
     }
   }
-  // Header-carousel ==================================================
+  // ================================================== Header-carousel
   &__carousel {
     // border: 1px solid #ff00bb;
     width: 1920px;
@@ -114,7 +114,7 @@
     color: $color-text-light-primary;
   }
 
-  // carousel-arrows =========================================================
+  // ==================================================== carousel-arrows
   &__arrow_left {
     box-sizing: border-box;
     // border: 1px solid #9e0000;
@@ -129,7 +129,7 @@
     margin-top: 352px;
   }
 
-  //carousel-text ============================================================
+  // ==================================================== carousel-text
 
   &__subtitle {
     // flex: 1 1;
@@ -202,7 +202,7 @@
     color: #fff;
   }
 
-  // Header__paggination ====================================================
+  // ==================================================== Header__paggination
   &__paggination {
     display: flex;
     justify-content: center;
@@ -228,11 +228,11 @@
     }
   }
 }
-// main block ==================================================
+// ================================================== main block
 .main {
   width: 1920px;
 }
-
+// ================================================== activities section
 .activities {
   height: 373px;
   // border: 1px solid aqua;
@@ -297,52 +297,164 @@
     }
   }
 }
-
+// ================================================== screenshots section
 .screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 344px 0 344px;
   height: 700px;
   border: 1px solid rgb(162, 0, 255);
   background-color: $color-background-secondary;
+  &__text {
+    margin: 0 auto;
+    width: 760px;
+  }
+  .block-title {
+    display: block;
+    margin: 0 auto 14px;
+    @extend %font-first-semibold;
+    color: $color-text-dark-primary;
+    object-fit: contain;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .block-text {
+    @extend %font-second-light;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-text-dark-secondary;
+  }
+  &__images {
+    width: 100%;
+    min-height: 485px;
+    background-image: url('/img/browser-center@3x.jpg'),
+      url('/img/browser-left@3x.jpg'), url('/img/browser-right@3x.jpg');
+
+    background-size: 62%, 62%, 62%;
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, bottom right;
+  }
 }
-.purchase-now {
+// ================================================== ad aside
+.ad {
   height: 150px;
   border: 1px solid rgb(0, 255, 4);
   background-image: linear-gradient(to top, #211b19, #4e3427);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.ad__wrapper {
+  margin: 0 470px 0 0;
+}
+
+.ad__title {
+  @extend %font-first-regular;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  color: $color-text-light-primary;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.ad__title span {
+  color: $color-text-light-secondary;
+}
+
+.ad__text {
+  @extend %font-second-light;
+  color: $color-text-light-quaternaly;
+  width: 100%;
+  margin: 0;
+  object-fit: contain;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.ad__button {
+  width: 170px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 2px solid $color-button-shadows;
+  border-radius: 3px;
+  background-color: $color-button-primary;
+  box-shadow: inset 0px -3px 0 0 $color-button-shadows;
+}
+.ad__button-text {
+  @extend %font-first-extrabold;
+  color: $color-text-light-primary;
+  object-fit: contain;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+// ================================================== our-latsest-projects
 .our-latsest-projects {
   height: 1160px;
   border: 1px solid rgb(162, 0, 255);
   background-color: $color-icon-primary;
 }
+// ================================================== waxom-video-presentation
 .waxom-video-presentation {
   height: 705px;
   border: 1px solid rgb(162, 0, 255);
   background-image: url(/img/background-images/video-presentation.png);
 }
+// ================================================== excellent-for-mobile
 .excellent-for-mobile {
   height: 695px;
   border: 1px solid rgb(162, 0, 255);
   background-color: $color-background-secondary;
 }
+// ================================================== quantities
 .quantities {
   height: 300px;
   border: 1px solid rgb(162, 0, 255);
   background-image: linear-gradient(to top, #211b19, #4e3427);
 }
+// ================================================== recent-posts
 .recent-posts {
   height: 750px;
   border: 1px solid rgb(162, 0, 255);
   background-color: $color-icon-primary;
 }
+// ================================================== logotypes
 .logotypes {
   height: 489px;
   border: 1px solid rgb(162, 0, 255);
   background-image: url(/img/background-images/mountanes.png);
 }
+// ================================================== .contacts
 .contacts {
   height: 508px;
   border: 1px solid rgb(162, 0, 255);
   background-color: $color-background-tertialy;
 }
+// ================================================== footer
 .footer {
   width: 1920px;
   height: 111px;
