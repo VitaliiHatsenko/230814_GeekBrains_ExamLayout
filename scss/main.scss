@@ -83,7 +83,7 @@
   &__carousel {
     border: 1px solid #ff00bb;
     width: 1920px;
-    min-height: 909px;
+    min-height: 800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -93,17 +93,32 @@
     border: 1px solid #000;
     min-height: 200px;
     width: 600px;
-    // margin: 0 470px 0 470px;
-    color: $color-text-light-primary;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 261px 0 383px 0;
+    padding: 256px 0 118px 0;
+    margin-bottom: 152px;
+    color: $color-text-light-primary;
+  }
+  // Header__paggination ====================================================
+  &__paggination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // background-color: green;
+    min-height: 30px;
+    margin-top: 45px;
+    border: 2px solid #ff0105;
   }
 
-  &__paggination {
-    width: 100%;
+  &__paggination-items {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: gold;
   }
 
   // carousel-arrows =========================================================
