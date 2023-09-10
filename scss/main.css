@@ -147,79 +147,7 @@ h6 {
   font-style: normal;
 }
 
-.ad__button-text, .header__button, .header__title {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.ad__text, .screenshots .block-text, .activities__item p, .header__text, .header__item-link {
-  font-family: "montserrat", "arial", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: raleway;
-  src: url("../fonts/raleway/regular/raleway-regular.eot");
-  src: url("../fonts/raleway/regular/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway/regular/raleway-regular.woff2") format("woff2"), url("../fonts/raleway/regular/raleway-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: raleway;
-  src: url("../fonts/raleway/medium/raleway-medium.eot");
-  src: url("../fonts/raleway/medium/raleway-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway/medium/raleway-medium.woff2") format("woff2"), url("../fonts/raleway/medium/raleway-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: raleway;
-  src: url("//fonts/raleway/semi-bold/raleway-semibold.eot");
-  src: url("//fonts/raleway/semi-bold/raleway-semibold.eot?#iefix") format("embedded-opentype"), url("//fonts/raleway/semi-bold/raleway-semibold.woff2") format("woff2"), url("//fonts/raleway/semi-bold/raleway-semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: raleway;
-  src: url("../fonts/raleway/extra-bold/raleway-extrabold.eot");
-  src: url("../fonts/raleway/extra-bold/raleway-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway/extra-bold/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway/extra-bold/raleway-extrabold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: montserrat;
-  src: url("../fonts/montserrat/light/montserrat-light.eot");
-  src: url("../fonts/montserrat/light/montserrat-light.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/light/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat/light/montserrat-light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: montserrat;
-  src: url("../fonts/montserrat/extra-light/montserrat-extralight.eot");
-  src: url("../fonts/montserrat/extra-light/montserrat-extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/extra-light/montserrat-extralight.woff2") format("woff2"), url("../fonts/montserrat/extra-light/montserrat-extralight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-.ad__title, .header__logo {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.header__subtitle {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.screenshots .block-title, .activities__item span {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ad__button-text, .header__button, .header__title {
+.ad__button-text, .header__button__button-text, .header__title {
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -379,27 +307,14 @@ h6 {
   width: 170px;
   height: 53px;
   margin: 0 auto;
+  padding: 15px 35px;
+  text-align: center;
   background-color: #998675;
   border-radius: 3px;
   box-shadow: inset 0px -3px 0 0 #736357;
+}
+.header__button__button-text {
   color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-}
-.header__button:hover {
-  background-color: #998675;
-}
-.header__button:hover span {
-  color: #555555;
-}
-.header__button:active {
-  background-color: #736357;
-}
-.header__button:active span {
-  color: #ffffff;
-}
-.header__button-text {
   font-size: 14px;
   font-weight: 800;
   font-stretch: normal;
@@ -407,10 +322,21 @@ h6 {
   line-height: 52px;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  text-transform: uppercase;
   text-decoration: none;
 }
-.header__paggination {
+.header__button__button:hover {
+  background-color: #ffffff;
+  color: #555555;
+}
+.header__button__button:active {
+  background-color: #736357;
+  color: #ffffff;
+}
+.header__button__button:visited {
+  color: #fff;
+}
+.header__button__paggination {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,7 +344,7 @@ h6 {
   min-height: 30px;
   margin-top: 45px;
 }
-.header__paggination-item {
+.header__button__paggination-item {
   display: block;
   width: 10px;
   height: 10px;
@@ -426,7 +352,7 @@ h6 {
   border-radius: 50%;
   background-color: gold;
 }
-.header__paggination-item:hover {
+.header__button__paggination-item:hover {
   background-color: transparent;
   border: 2px solid gold;
   transform: scale(1.2);
@@ -534,9 +460,6 @@ h6 {
   background-size: 62%, 62%, 62%;
   background-repeat: no-repeat;
   background-position: bottom center, bottom left, bottom right;
-}
-.screenshots__images:hover {
-  background-image: url("/img/browser-left@3x.jpg"), url("/img/browser-center@3x.jpg"), url("/img/browser-right@3x.jpg");
 }
 
 .ad {

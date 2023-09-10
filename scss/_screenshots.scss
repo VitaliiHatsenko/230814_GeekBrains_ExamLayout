@@ -1,0 +1,52 @@
+// ================================================== screenshots section
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 344px 0 344px;
+  height: 700px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-background-secondary;
+  &__text {
+    margin: 0 auto;
+    width: 760px;
+  }
+  .block-title {
+    display: block;
+    margin: 0 auto 14px;
+    @extend %font-first-semibold;
+    color: $color-text-dark-primary;
+    object-fit: contain;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .block-text {
+    @extend %font-second-light;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-text-dark-secondary;
+  }
+  &__images {
+    width: 100%;
+    min-height: 485px;
+    background-image: url('/img/browser-center@3x.jpg'),
+      url('/img/browser-left@3x.jpg'), url('/img/browser-right@3x.jpg');
+
+    background-size: 62%, 62%, 62%;
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, bottom right;
+    &:hover {
+      background-image: url('/img/browser-left@3x.jpg'),
+        url('/img/browser-center@3x.jpg'), url('/img/browser-right@3x.jpg');
+    }
+  }
+}

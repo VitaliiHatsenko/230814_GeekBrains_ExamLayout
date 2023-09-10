@@ -1,0 +1,66 @@
+// ================================================== ad aside
+.ad {
+  height: 150px;
+  border: 1px solid rgb(0, 255, 4);
+  background-image: linear-gradient(to top, #211b19, #4e3427);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad__wrapper {
+  margin: 0 470px 0 0;
+}
+
+.ad__title {
+  @extend %font-first-regular;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  color: $color-text-light-primary;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.ad__title span {
+  color: $color-text-light-secondary;
+}
+
+.ad__text {
+  @extend %font-second-light;
+  color: $color-text-light-quaternaly;
+  width: 100%;
+  margin: 0;
+  object-fit: contain;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.ad__button {
+  width: 170px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 2px solid $color-button-shadows;
+  border-radius: 3px;
+  background-color: $color-button-primary;
+  box-shadow: inset 0px -3px 0 0 $color-button-shadows;
+}
+.ad__button-text {
+  @extend %font-first-extrabold;
+  color: $color-text-light-primary;
+  object-fit: contain;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+}
