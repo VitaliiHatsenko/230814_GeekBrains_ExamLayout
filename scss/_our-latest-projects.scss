@@ -1,0 +1,98 @@
+@import 'variables';
+@import 'zeroing';
+@import 'fonts';
+@import 'mixins';
+// ================================================== our-latsest-projects
+.our-latsest-projects {
+  height: 1160px;
+  border: 1px solid rgb(162, 0, 255);
+  background-color: $color-icon-primary;
+  padding: 80px 375px;
+
+  &__container {
+    background: #9b6a6a;
+    display: flex;
+    flex-direction: column;
+  }
+  &__textbox {
+    background: #6699a8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-title {
+      @include block-title;
+      @extend %font-first-semibold;
+      width: 100%;
+    }
+    &-txt {
+      @include block-text;
+      @extend %font-second-light;
+    }
+  }
+  &__menubox {
+    background: greenyellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-container {
+      width: 605px;
+      height: 32px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-button {
+      background: transparent;
+      color: $color-text-dark-secondary;
+      @extend %font-second-light;
+      width: 120px;
+      height: 32px;
+      margin: 0 10px 0 0;
+      // padding: 10px 19px 8px 18px;
+      object-fit: contain;
+      border-radius: 3px;
+      border: solid 1px #ebebeb;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__picturebox {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-item {
+      background: gold;
+      width: 33.333%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &-pic {
+        background: blue;
+      }
+      &-title {
+        background: blueviolet;
+      }
+      &-txt {
+        background: grey;
+      }
+    }
+  }
+
+  &__buttonbox {
+    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
+    background: aqua;
+  }
+}

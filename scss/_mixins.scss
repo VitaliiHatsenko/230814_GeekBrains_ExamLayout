@@ -1,0 +1,24 @@
+@mixin block-title {
+  display: block;
+  margin: 0 auto 14px;
+  object-fit: contain;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-text-dark-primary;
+}
+
+@mixin block-text {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: $color-text-dark-secondary;
+}

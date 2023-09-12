@@ -1,18 +1,13 @@
 @import 'variables';
 @import 'zeroing';
 @import 'fonts';
-@import '_header';
+@import 'mixins';
+@import 'header';
 @import 'body-main';
 @import 'activities';
 @import 'screenshots';
 @import 'aside';
-
-// ================================================== our-latsest-projects
-.our-latsest-projects {
-  height: 1160px;
-  border: 1px solid rgb(162, 0, 255);
-  background-color: $color-icon-primary;
-}
+@import 'our-latest-projects';
 // ================================================== waxom-video-presentation
 .waxom-video-presentation {
   height: 705px;

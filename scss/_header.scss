@@ -17,28 +17,36 @@
   background-blend-mode: multiply;
   // ================================================== Header-top
   &__top {
-    // border: 1px solid #ff0000;
     display: flex;
     margin: 30px 0 0 0;
     padding: 0 374px 0 376px;
   }
   &__logo {
-    @extend %font-first-regular;
-    // border: 1px solid #f6ff00;
-    box-sizing: border-box;
     display: flex;
     margin-top: 8px;
-  }
-  &__logo-text {
-    margin: 8px 0 15px -20px;
-    font-size: 34px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.5px;
-    text-align: right;
-    color: $color-text-light-primary;
+    transition: transform 500ms;
+    &:hover {
+      transform: scale(1.1);
+      // stroke: gold;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+    // &-svg {
+    //   fill: $color-text-dark-primary;
+    // }
+    &-text {
+      @extend %font-first-regular;
+      margin: 8px 0 15px -20px;
+      font-size: 34px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.5px;
+      text-align: right;
+      color: $color-text-light-primary;
+    }
   }
   &__nav {
     // border: 1px solid #1d00f9;
@@ -69,6 +77,9 @@
     color: $color-text-light-primary;
     // border: 1px solid #ffe600;
     display: flex;
+    &:hover {
+      color: $color-text-light-secondary;
+    }
   }
   &__basket-button {
     margin: 3px 22px 11px 31px;
@@ -184,19 +195,21 @@
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    transition: transform 500ms;
     &:hover {
       background-color: $color-button-primary;
+      transform: scale(1.05);
       & span {
         color: $color-text-dark-primary;
       }
     }
     &:active {
       background-color: $color-button-shadows;
+      transform: scale(0.95);
       & span {
         color: $color-text-light-primary;
       }
     }
-
     &-text {
       font-size: 14px;
       font-weight: 800;
@@ -209,7 +222,6 @@
       text-decoration: none;
     }
   }
-
   // ==================================================== Header__paggination
   &__paggination {
     display: flex;

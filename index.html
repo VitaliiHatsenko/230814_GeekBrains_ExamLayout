@@ -5,17 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Example #2</title>
+    <title>Waxom</title>
   </head>
   <body>
     <!---------------------------------------------------- header -->
     <header class="header">
       <!---------------------------------------------------- header-top -->
       <section class="header__top">
-        <div class="header__logo">
-          <img src="/img/icons/logos.svg" alt="logo" />
-          <p class="header__logo-text">Waxom</p>
-        </div>
+        <a href="index.html" class="header__logo">
+          <svg
+            class="header__logo-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="85.342"
+            height="74.683"
+          >
+            <defs>
+              <filter id="onwbtyrtxa">
+                <feFlood
+                  flood-color="#FFF"
+                  flood-opacity="1"
+                  result="floodOut"
+                />
+                <feComposite
+                  operator="atop"
+                  in="floodOut"
+                  in2="SourceGraphic"
+                  result="compOut"
+                />
+                <feBlend in="compOut" in2="SourceGraphic" />
+              </filter>
+            </defs>
+            <g filter="url(#onwbtyrtxa)">
+              <path
+                fill-rule="evenodd"
+                d="m52.873 55.128 5.252-9.189 5.252 9.189H52.873zm-6.57-9.956h10.508l-5.254 9.187-5.254-9.187zm5.254-10.721 5.254 9.19H46.303l5.254-9.19zm-11.819-.765h10.505l-5.253 9.188-5.252-9.188zm5.252-10.719 5.253 9.187H39.738l5.252-9.187zm-11.822-.765h10.508l-5.254 9.188-5.254-9.188zm5.254-10.722 5.254 9.191H33.168l5.254-9.191zM26.6 10.713h10.508l-5.254 9.192-5.254-9.192zM31.854-.006l5.254 9.19H26.6l5.254-9.19zM20.032 20.671l5.254-9.191 5.254 9.191H20.032zm-6.567 11.483 5.253-9.187 5.253 9.187H13.465zM6.897 43.641l5.254-9.19 5.253 9.19H6.897zM.331 55.128l5.251-9.189 5.254 9.189H.331zm17.073-9.956-5.253 9.187-5.254-9.187h10.507zm6.567-11.486-5.253 9.188-5.253-9.188h10.506zm6.569-11.484-5.254 9.188-5.254-9.188H30.54zm6.568 32.926H26.6l5.254-9.189 5.254 9.189zm6.568-9.956-5.254 9.187-5.254-9.187h10.508zm6.567 9.956H39.738l5.252-9.189 5.253 9.189z"
+              />
+            </g>
+          </svg>
+          <span class="header__logo-text">Waxom</span></a
+        >
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -130,9 +159,11 @@
       </section>
       <!---------------------------------------------------- screenshots -->
       <section class="screenshots">
-        <div class="screenshots__text">
-          <span class="block-title">Waxom is Realization of your Ideas.</span>
-          <p class="block-text">
+        <div class="screenshots__textbox">
+          <span class="screenshots__textbox-title"
+            >Waxom is Realization of your Ideas.</span
+          >
+          <p class="screenshots__textbox-txt">
             Investigationes demonstraverunt lectores legere me lius quod ii
             legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
             mutationem consuetudium.
@@ -156,7 +187,96 @@
         </button>
       </aside>
       <!---------------------------------------------------- our-latsest-projects -->
-      <section class="our-latsest-projects"></section>
+      <section class="our-latsest-projects">
+        <div class="our-latsest-projects__container">
+          <div class="our-latsest-projects__textbox">
+            <span class="our-latsest-projects__textbox-title"
+              >Our Latest Projects.</span
+            >
+            <p class="our-latsest-projects__textbox-txt">
+              Investigationes demonstraverunt lectores legere me lius quod ii
+              legunt saepius. Claritas est etiam processus dynamicus, qui
+              sequitur mutationem consuetudium.
+            </p>
+          </div>
+          <div class="our-latsest-projects__menubox">
+            <div class="our-latsest-projects__menubox-container">
+              <button class="our-latsest-projects__menubox-button">All</button>
+              <button class="our-latsest-projects__menubox-button">
+                Web Design
+              </button>
+              <button class="our-latsest-projects__menubox-button">
+                Mobile App
+              </button>
+              <button class="our-latsest-projects__menubox-button">
+                Illustration
+              </button>
+              <button class="our-latsest-projects__menubox-button">
+                Photography
+              </button>
+            </div>
+          </div>
+          <div class="our-latsest-projects__picturebox">
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Claritas Etiam Processus
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Photography, Nature
+              </div>
+            </div>
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Quam Nutamus Farum
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Graphic Design, Mock-Up
+              </div>
+            </div>
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Usus Legentis Videntur
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Photography, Holiday
+              </div>
+            </div>
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Claritas Etiam Processus
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Photography, Nature
+              </div>
+            </div>
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Quam Nutamus Farum
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Graphic Design, Mock-Up
+              </div>
+            </div>
+            <div class="our-latsest-projects__picturebox-item">
+              <div class="our-latsest-projects__picturebox-item-pic"></div>
+              <div class="our-latsest-projects__picturebox-item-title">
+                Usus Legentis Videntur
+              </div>
+              <div class="our-latsest-projects__picturebox-item-txt">
+                Photography, Holiday
+              </div>
+            </div>
+          </div>
+          <div class="our-latsest-projects__buttonbox">
+            <a href="#" class="our-latsest-projects__button">Load more</a>
+          </div>
+        </div>
+      </section>
       <!---------------------------------------------------- waxom-video-presentation -->
       <section class="waxom-video-presentation"></section>
       <!---------------------------------------------------- excellent-for-mobile -->
