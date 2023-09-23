@@ -108,7 +108,6 @@
     justify-content: space-between;
     padding: 256px 0 118px 0;
     margin-bottom: 152px;
-    color: $color-text-light-primary;
   }
   // ==================================================== carousel-arrows
   &__arrow_left {
@@ -124,37 +123,43 @@
   }
   // ==================================================== carousel-text
   &__subtitle {
+    @include title(
+      $size: 36px,
+      $ff: $font-main,
+      $fw: 500,
+      $color: $color-text-light-primary,
+      $lh: normal,
+      $ta: center
+    );
     align-items: center;
-    @extend %font-first-medium;
-    font-size: 36px;
-    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
-    text-align: center;
   }
   &__title {
+    @include title(
+      $size: 52px,
+      $ff: $font-main,
+      $fw: 800,
+      $color: $color-text-light-primary,
+      $lh: normal,
+      $ta: center
+    );
     margin: 0 auto;
-    @extend %font-first-extrabold;
-    font-size: 52px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: $color-text-light-primary;
   }
   &__text {
+    @include text(
+      $size: 16px,
+      $ff: $font-secondary,
+      $fw: 300,
+      $color: $color-text-light-primary,
+      $lh: 1.5,
+      $ta: center
+    );
     margin: 0 auto;
-    @extend %font-second-light;
-    font-size: 16px;
-    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
     letter-spacing: normal;
-    text-align: center;
   }
   &__button {
     @include button;

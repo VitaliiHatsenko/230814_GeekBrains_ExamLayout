@@ -135,25 +135,7 @@ h6 {
   font-style: normal;
 }
 
-.header__subtitle {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.activities__item span {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.header__title {
-  font-family: "raleway", "arial", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.our-latsest-projects__menubox-button, .ad__text, .activities__item p, .header__text, .header__item-link {
+.our-latsest-projects__menubox-button, .ad__text, .activities__item-text, .header__item-link {
   font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -266,7 +248,6 @@ h6 {
   justify-content: space-between;
   padding: 256px 0 118px 0;
   margin-bottom: 152px;
-  color: #ffffff;
 }
 .header__arrow_left {
   box-sizing: border-box;
@@ -280,34 +261,39 @@ h6 {
   margin-top: 352px;
 }
 .header__subtitle {
-  align-items: center;
   font-size: 36px;
+  font-family: "raleway", "arial", sans-serif;
   font-weight: 500;
+  color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  display: block;
+  align-items: center;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  text-align: center;
 }
 .header__title {
-  margin: 0 auto;
   font-size: 52px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
+  font-family: "raleway", "arial", sans-serif;
+  font-weight: 800;
   color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 .header__text {
-  margin: 0 auto;
   font-size: 16px;
+  font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
   letter-spacing: normal;
-  text-align: center;
 }
 .header__button {
   display: flex;
@@ -373,21 +359,20 @@ h6 {
   transform: scale(1.5);
 }
 
-.main {
-  width: 1920px;
-}
-
 .activities {
   height: 373px;
   background-color: #ffffff;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.activities .container {
-  border: 1px solid #000;
-  margin: auto;
-  width: 1166px;
-  height: 215px;
+.activities__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #000;
+  margin: 0 auto;
+  height: 215px;
 }
 .activities__item {
   display: flex;
@@ -395,11 +380,17 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-.activities__item img {
+.activities__item-img {
   display: block;
 }
-.activities__item span {
+.activities__item-title {
   font-size: 22px;
+  font-family: "raleway", "arial", sans-serif;
+  font-weight: 600;
+  color: #555555;
+  line-height: normal;
+  text-align: center;
+  display: block;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -408,7 +399,7 @@ h6 {
   text-align: center;
   color: #555555;
 }
-.activities__item p {
+.activities__item-text {
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -658,37 +649,36 @@ h6 {
   color: #ffffff;
 }
 
+.main {
+  width: 1920px;
+}
+
+.container {
+  width: 1170px;
+}
+
 .textbox {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .textbox-title {
-  display: block;
-  margin: 0 auto 14px;
-  -o-object-fit: contain;
-     object-fit: contain;
   font-size: 30px;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #555555;
   font-family: "raleway", "arial", sans-serif;
   font-weight: 600;
-  font-style: normal;
+  color: #555555;
+  line-height: normal;
+  text-align: center;
+  display: block;
   width: 100%;
 }
 .textbox-txt {
   font-size: 16px;
-  font-stretch: normal;
-  line-height: 1.75;
-  letter-spacing: normal;
-  text-align: center;
-  color: #8c8c8c;
   font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
-  font-style: normal;
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
 }
 
 .waxom-video-presentation {

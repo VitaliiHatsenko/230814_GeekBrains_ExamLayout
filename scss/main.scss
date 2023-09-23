@@ -3,28 +3,28 @@
 @import 'fonts';
 @import 'mixins';
 @import 'header';
-@import 'body-main';
 @import 'activities';
 @import 'screenshots';
 @import 'aside';
 @import 'our-latest-projects';
 
 // ================================================== general rules
+.main {
+  width: 1920px;
+}
+.container {
+  width: 1170px;
+}
 .textbox {
-  // background: #6699a8;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   &-title {
-    @include block-title;
-    // @extend %font-first-semibold;
+    @include title;
     width: 100%;
   }
   &-txt {
-    @include block-text;
-    // @extend %font-second-light;
-    // width: 65%;
-    // margin-bottom: 40px;
+    @include text;
   }
 }
 // ================================================== waxom-video-presentation

@@ -1,34 +1,35 @@
-@mixin block-title {
+@mixin title(
+  $size: 30px,
+  $ff: $font-main,
+  $fw: 600,
+  $color: $color-text-dark-primary,
+  $lh: normal,
+  $ta: center
+) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  color: $color;
+  line-height: $lh;
+  text-align: $ta;
+
   display: block;
-  margin: 0 auto 14px;
-  object-fit: contain;
-  font-size: 30px;
-  // font-weight: 600;
-  font-stretch: normal;
-  // font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-text-dark-primary;
-  // @extend %font-first-semibold;
-  font-family: 'raleway', 'arial', sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
-@mixin block-text {
-  font-size: 16px;
-  // font-weight: 300;
-  font-stretch: normal;
-  // font-style: normal;
-  line-height: 1.75;
-  letter-spacing: normal;
-  text-align: center;
-  color: $color-text-dark-secondary;
-  // @extend %font-second-light;
-  font-family: 'montserrat', 'arial', sans-serif;
-  font-weight: 300;
-  font-style: normal;
+@mixin text(
+  $size: 16px,
+  $ff: $font-secondary,
+  $fw: 300,
+  $color: $color-text-dark-secondary,
+  $lh: 1.75,
+  $ta: center
+) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  color: $color;
+  line-height: $lh;
+  text-align: $ta;
 }
 
 @mixin button {
