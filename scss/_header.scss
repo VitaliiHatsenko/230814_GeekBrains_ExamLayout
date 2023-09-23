@@ -1,6 +1,3 @@
-@import 'variables';
-@import 'fonts';
-
 // ================================================== Header styles
 .header {
   display: flex;
@@ -27,14 +24,10 @@
     transition: transform 500ms;
     &:hover {
       transform: scale(1.1);
-      // stroke: gold;
     }
     &:active {
       transform: scale(0.9);
     }
-    // &-svg {
-    //   fill: $color-text-dark-primary;
-    // }
     &-text {
       @extend %font-first-regular;
       margin: 8px 0 15px -20px;
@@ -49,7 +42,6 @@
     }
   }
   &__nav {
-    // border: 1px solid #1d00f9;
     display: flex;
     margin-left: 185px;
     padding: 28px;
@@ -57,13 +49,11 @@
   }
   &__list {
     display: flex;
-    // border: 1px solid #000;
     box-sizing: border-box;
     width: 100%;
     justify-content: space-between;
   }
   &__item {
-    // border: 1px solid #e90707;
     display: flex;
   }
   &__item-link {
@@ -75,7 +65,6 @@
     letter-spacing: normal;
     text-align: left;
     color: $color-text-light-primary;
-    // border: 1px solid #ffe600;
     display: flex;
     &:hover {
       color: $color-text-light-secondary;
@@ -104,7 +93,6 @@
   }
   // ================================================== Header-carousel
   &__carousel {
-    // border: 1px solid #ff00bb;
     width: 1920px;
     min-height: 800px;
     margin: 0 auto;
@@ -113,7 +101,6 @@
     padding: 0 150px 0 150px;
   }
   &__carousel-textbox {
-    // border: 1px solid #000;
     min-height: 200px;
     width: 600px;
     display: flex;
@@ -123,27 +110,20 @@
     margin-bottom: 152px;
     color: $color-text-light-primary;
   }
-
   // ==================================================== carousel-arrows
   &__arrow_left {
     box-sizing: border-box;
-    // border: 1px solid #9e0000;
     height: 80px;
     width: 45px;
     margin-top: 352px;
   }
   &__arrow_right {
-    // border: 1px solid #0d01b9;
     height: 80px;
     width: 45px;
     margin-top: 352px;
   }
-
   // ==================================================== carousel-text
-
   &__subtitle {
-    // flex: 1 1;
-    // background: #000;
     align-items: center;
     @extend %font-first-medium;
     font-size: 36px;
@@ -155,8 +135,6 @@
     text-align: center;
   }
   &__title {
-    // flex: 1 1 905px;
-    // background: #ccc;
     margin: 0 auto;
     @extend %font-first-extrabold;
     font-size: 52px;
@@ -168,8 +146,6 @@
     color: $color-text-light-primary;
   }
   &__text {
-    // flex: 1 1 905px;
-    // background: #827676;
     margin: 0 auto;
     @extend %font-second-light;
     font-size: 16px;
@@ -181,46 +157,8 @@
     text-align: center;
   }
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 53px;
+    @include button;
     margin: 0 auto;
-    background-color: $color-button-primary;
-    border-radius: 3px;
-    box-shadow: inset 0px -3px 0 0 $color-button-shadows;
-    @extend %font-first-extrabold;
-    color: $color-text-light-primary;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 500ms;
-    &:hover {
-      background-color: $color-button-primary;
-      transform: scale(1.05);
-      & span {
-        color: $color-text-dark-primary;
-      }
-    }
-    &:active {
-      background-color: $color-button-shadows;
-      transform: scale(0.95);
-      & span {
-        color: $color-text-light-primary;
-      }
-    }
-    &-text {
-      font-size: 14px;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 52px;
-      letter-spacing: normal;
-      text-align: center;
-      color: $color-text-light-primary;
-      text-decoration: none;
-    }
   }
   // ==================================================== Header__paggination
   &__paggination {
@@ -228,10 +166,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    // background-color: green;
     min-height: 30px;
     margin-top: 45px;
-    // border: 2px solid #ff0105;
   }
 
   &__paggination-item {
@@ -240,11 +176,11 @@
     height: 10px;
     margin: 0 5px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: $color-paggination;
     &:hover {
       background-color: transparent;
-      border: 2px solid gold;
-      transform: scale(1.2);
+      border: 2px solid $color-paggination-hover;
+      transform: scale(1.5);
     }
   }
 }

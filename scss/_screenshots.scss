@@ -1,7 +1,3 @@
-@import 'variables';
-@import 'zeroing';
-@import 'fonts';
-@import 'mixins';
 // ================================================== screenshots section
 .screenshots {
   display: flex;
@@ -14,28 +10,20 @@
     margin: 0 auto;
     width: 760px;
     flex-wrap: wrap;
-    &-title {
-      @include block-title;
-      @extend %font-first-semibold;
-      width: 100%;
-    }
-    &-txt {
-      @include block-text;
-      @extend %font-second-light;
-    }
   }
   &__images {
     width: 100%;
     min-height: 485px;
-    background-image: url('/img/browser-center@3x.jpg'),
-      url('/img/browser-left@3x.jpg'), url('/img/browser-right@3x.jpg');
-
+    background-image: url('/img/content/browser-center@3x.jpg'),
+      url('/img/content/browser-left@3x.jpg'),
+      url('/img/content/browser-right@3x.jpg');
     background-size: 62%, 62%, 62%;
     background-repeat: no-repeat;
     background-position: bottom center, bottom left, bottom right;
     &:hover {
-      background-image: url('/img/browser-left@3x.jpg'),
-        url('/img/browser-center@3x.jpg'), url('/img/browser-right@3x.jpg');
+      background-image: url('/img/content/browser-left@3x.jpg'),
+        url('/img/content/browser-center@3x.jpg'),
+        url('/img/content/browser-right@3x.jpg');
     }
   }
 }

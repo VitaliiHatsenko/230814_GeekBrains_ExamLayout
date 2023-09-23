@@ -8,6 +8,25 @@
 @import 'screenshots';
 @import 'aside';
 @import 'our-latest-projects';
+
+// ================================================== general rules
+.textbox {
+  // background: #6699a8;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-title {
+    @include block-title;
+    // @extend %font-first-semibold;
+    width: 100%;
+  }
+  &-txt {
+    @include block-text;
+    // @extend %font-second-light;
+    // width: 65%;
+    // margin-bottom: 40px;
+  }
+}
 // ================================================== waxom-video-presentation
 .waxom-video-presentation {
   height: 705px;

@@ -3,22 +3,76 @@
   margin: 0 auto 14px;
   object-fit: contain;
   font-size: 30px;
-  font-weight: 600;
+  // font-weight: 600;
   font-stretch: normal;
-  font-style: normal;
+  // font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
   color: $color-text-dark-primary;
+  // @extend %font-first-semibold;
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @mixin block-text {
   font-size: 16px;
-  font-weight: 300;
+  // font-weight: 300;
   font-stretch: normal;
-  font-style: normal;
+  // font-style: normal;
   line-height: 1.75;
   letter-spacing: normal;
   text-align: center;
   color: $color-text-dark-secondary;
+  // @extend %font-second-light;
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 53px;
+  border: none;
+  border-bottom: 2px solid $color-button-shadows;
+  border-radius: 3px;
+  background-color: $color-button-primary;
+  box-shadow: inset 0px -3px 0 0 $color-button-shadows;
+  color: $color-text-light-primary;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 500ms;
+  // ===================================== font
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 52px;
+  font-size: 14px;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  // ===================================== effects
+  &:hover {
+    background-color: $color-button-primary;
+    transform: scale(1.05);
+    & .button-text {
+      color: $color-text-dark-primary;
+    }
+  }
+  &:active {
+    background-color: $color-button-shadows;
+    transform: scale(0.95);
+    & .button-text {
+      color: $color-text-light-primary;
+    }
+  }
+}
+
+// @mixin button-text {
+// }
