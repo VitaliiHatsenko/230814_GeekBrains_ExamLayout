@@ -7,43 +7,59 @@
   align-items: center;
 
   &__wrapper {
+    min-height: 215px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
-    border: 1px solid #000;
-    margin: 0 auto;
-    height: 215px;
+    // border: 1px solid #000;
+    gap: 26px;
   }
   &__item {
+    width: calc(100% / 4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    &-img-wrapper {
+      height: 60px;
+      width: 75px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     &-img {
       display: block;
+      fill: #555555;
     }
     &-title {
-      @include title($size: 22px);
-      font-weight: 600;
+      @include title(
+        $size: 22px,
+        $ff: $font-main,
+        $fw: 600,
+        $color: $color-text-dark-primary,
+        $lh: normal,
+        $ta: center
+      );
+      margin: 12px 19px;
       font-stretch: normal;
       font-style: normal;
-      line-height: normal;
       letter-spacing: normal;
-      text-align: center;
-      color: $color-text-dark-primary;
     }
     &-text {
-      @extend %font-second-light;
-      font-size: 14px;
-      font-weight: 300;
+      @include title(
+        $size: 14px,
+        $ff: $font-secondary,
+        $fw: 300,
+        $color: $color-text-dark-secondary,
+        $lh: 1.71,
+        $ta: center
+      );
+      margin-bottom: 25px;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.71;
       letter-spacing: normal;
-      text-align: center;
-      color: $color-text-dark-secondary;
     }
     &:after {
       content: '';
@@ -52,11 +68,27 @@
       height: 3px;
       background-color: $color-line;
     }
-    &:hover span {
+    &:hover .activities__item-title {
       color: $color-icon-active;
+    }
+    &:hover .activities__item-img {
+      fill: $color-icon-active;
     }
     &:hover:after {
       background-color: $color-icon-active;
     }
+    // &--active .activities__item-title {
+    //   color: $color-icon-active;
+    // }
+    // &--active .activities__item-img {
+    //   fill: $color-icon-active;
+    // }
+    // &--active:after {
+    //   content: '';
+    //   display: block;
+    //   width: 70px;
+    //   height: 3px;
+    //   background-color: $color-icon-active;
+    // }
   }
 }

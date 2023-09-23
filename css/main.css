@@ -135,7 +135,7 @@ h6 {
   font-style: normal;
 }
 
-.our-latsest-projects__menubox-button, .ad__text, .activities__item-text, .header__item-link {
+.our-latsest-projects__menubox-button, .ad__text, .header__item-link {
   font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -367,21 +367,31 @@ h6 {
   align-items: center;
 }
 .activities__wrapper {
+  min-height: 215px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid #000;
-  margin: 0 auto;
-  height: 215px;
+  gap: 26px;
 }
 .activities__item {
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.activities__item-img-wrapper {
+  height: 60px;
+  width: 75px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .activities__item-img {
   display: block;
+  fill: #555555;
 }
 .activities__item-title {
   font-size: 22px;
@@ -391,23 +401,23 @@ h6 {
   line-height: normal;
   text-align: center;
   display: block;
-  font-weight: 600;
+  margin: 12px 19px;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
-  text-align: center;
-  color: #555555;
 }
 .activities__item-text {
   font-size: 14px;
+  font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
+  color: #8c8c8c;
+  line-height: 1.71;
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.71;
   letter-spacing: normal;
-  text-align: center;
-  color: #8c8c8c;
 }
 .activities__item:after {
   content: "";
@@ -416,8 +426,11 @@ h6 {
   height: 3px;
   background-color: #f1eee9;
 }
-.activities__item:hover span {
+.activities__item:hover .activities__item-title {
   color: #c7b299;
+}
+.activities__item:hover .activities__item-img {
+  fill: #c7b299;
 }
 .activities__item:hover:after {
   background-color: #c7b299;
