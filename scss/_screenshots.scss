@@ -10,6 +10,9 @@
     margin: 0 auto;
     width: 760px;
     flex-wrap: wrap;
+    &-title {
+      margin-bottom: 10px;
+    }
   }
   &__images {
     width: 100%;

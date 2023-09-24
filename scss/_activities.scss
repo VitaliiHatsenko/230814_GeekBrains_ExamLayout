@@ -36,11 +36,11 @@
     &-title {
       @include title(
         $size: 22px,
-        $ff: $font-main,
-        $fw: 600,
-        $color: $color-text-dark-primary,
-        $lh: normal,
-        $ta: center
+        // $ff: $font-main,
+        // $fw: 600,
+        // $color: $color-text-dark-primary,
+        // $lh: normal,
+        // $ta: center
       );
       margin: 12px 19px;
       font-stretch: normal;
@@ -48,13 +48,13 @@
       letter-spacing: normal;
     }
     &-text {
-      @include title(
+      @include text(
         $size: 14px,
-        $ff: $font-secondary,
-        $fw: 300,
-        $color: $color-text-dark-secondary,
+        // $ff: $font-secondary,
+        // $fw: 300,
+        // $color: $color-text-dark-secondary,
         $lh: 1.71,
-        $ta: center
+        // $ta: center
       );
       margin-bottom: 25px;
       font-stretch: normal;
@@ -77,18 +77,5 @@
     &:hover:after {
       background-color: $color-icon-active;
     }
-    // &--active .activities__item-title {
-    //   color: $color-icon-active;
-    // }
-    // &--active .activities__item-img {
-    //   fill: $color-icon-active;
-    // }
-    // &--active:after {
-    //   content: '';
-    //   display: block;
-    //   width: 70px;
-    //   height: 3px;
-    //   background-color: $color-icon-active;
-    // }
   }
 }

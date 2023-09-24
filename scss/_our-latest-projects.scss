@@ -1,10 +1,9 @@
 // ================================================== our-latsest-projects
 .our-latsest-projects {
   height: 1160px;
-  border: 1px solid rgb(162, 0, 255);
+  // border: 1px solid rgb(162, 0, 255);
   background-color: $color-icon-primary;
   padding: 80px 375px;
-
   &__container {
     // background: #9b6a6a;
     display: flex;
@@ -15,43 +14,52 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    &-title {
+      margin-bottom: 10px;
+    }
     &-txt {
       width: 65%;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
   &__menubox {
-    background: greenyellow;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: center;
-
-    &-container {
-      width: 605px;
-      height: 32px;
+    margin-bottom: 40px;
+    &-wrapper {
+      width: 65%;
+      min-height: 32px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 0 4px;
     }
     &-button {
+      display: inline-block;
+      padding: 8px 20px;
       background: transparent;
-      color: $color-text-dark-secondary;
-      @extend %font-second-light;
-      width: 120px;
-      height: 32px;
-      margin: 0 10px 0 0;
-      // padding: 10px 19px 8px 18px;
-      object-fit: contain;
       border-radius: 3px;
       border: solid 1px #ebebeb;
-      &:last-child {
-        margin: 0;
+      cursor: pointer;
+      @include text(
+        $size: 14px,
+        $ff: $font-secondary,
+        $fw: 300,
+        $color: $color-text-dark-secondary,
+        $lh: 1.5,
+        $ta: center
+      );
+      &:hover {
+        background-color: $color-button-primary;
+        color: $color-text-light-primary;
+      }
+      &:active {
+        background-color: transparent;
+        color: $color-text-dark-secondary;
       }
     }
   }
 
   &__picturebox {
-    // background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,34 +67,110 @@
     margin: 0 -15px;
 
     &-item {
-      background: gold;
-      width: calc(33.333% - 30px);
-      margin: 40px 15px 30px 15px;
+      background-color: $color-background-secondary;
+      width: calc(100% / 3 - 30px);
+      margin: 0 15px 30px 15px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      position: relative;
 
       // &-pic {
-      //   // background: blue;
       // }
+      &-content {
+        min-height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        padding: 27px;
+        z-index: 10;
+        &:before {
+          content: '';
+          display: block;
+          border: 33px solid transparent;
+          border-bottom: 20px solid $color-background-secondary;
+          position: absolute;
+          top: 190px;
+          left: 6px;
+          z-index: 2;
+        }
+      }
       &-title {
-        background: blueviolet;
+        width: 100%;
+        @include title(
+          $size: 20px,
+          $ff: $font-main,
+          $fw: 500,
+          $color: $color-text-light-secondary,
+          $ta: left
+        );
       }
       &-txt {
-        background: grey;
+        width: 100%;
+        @include text(
+          $size: 14px,
+          $ff: $font-main,
+          $fw: 300,
+          $color: $color-text-light-tertialy,
+          $lh: 20px,
+          $ta: left
+        );
+      }
+      &-hover-cover {
+        align-items: flex-start;
+        background-color: #000;
+        display: none;
+        justify-content: center;
+        opacity: 0.8;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        &-button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          margin: 100px 0 0 0;
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 5px 2px #555;
+          }
+        }
+        &-svg {
+          fill: #fff;
+          &:hover {
+            fill: #998675;
+          }
+          &:active {
+            fill: #fff;
+          }
+        }
+      }
+      &:hover &-content {
+        background-color: #362f2d;
+      }
+
+      &:hover &-content:before {
+        border-bottom-color: #362f2d;
+      }
+
+      &:hover &-hover-cover {
+        display: flex;
+        z-index: 1;
       }
     }
   }
 
   &__buttonbox {
-    background: orangered;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   &__button {
-    background: aqua;
     @include button;
   }
 }
