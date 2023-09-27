@@ -1,0 +1,96 @@
+// ================================================== video-presentation
+.presentation {
+  height: 705px;
+  border: 1px solid rgb(162, 0, 255);
+  &__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &-file {
+      width: 100%;
+      height: 705px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    &-textbox-wrapper {
+      height: 400px;
+      width: 600px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    &-textbox-btn {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 40px;
+      border-radius: 50%;
+      background-color: rgba(17, 17, 17, 0.5);
+      cursor: pointer;
+      transition: transform 400ms ease-out, background-color 400ms ease,
+        border-radius 400ms ease-out;
+      &:hover {
+        transform: rotate(360deg) scale(1.1);
+        background-color: rgba(17, 17, 17, 0.7);
+        border-radius: 5%;
+      }
+      &:hover .presentation__video-icon {
+        fill: $color-icon-secondary;
+      }
+      &:active .presentation__video-icon {
+        fill: $color-icon-primary;
+        transform: scale(0.97);
+      }
+    }
+    &-icon {
+      margin: auto;
+      fill: $color-icon-primary;
+    }
+    &-textbox-title {
+      margin-bottom: 20px;
+      @include title(
+        $size: 30px,
+        $ff: $font-main,
+        $fw: 500,
+        $color: $color-text-light-primary,
+        $lh: normal,
+        $ta: center
+      );
+    }
+    &-textbox-text {
+      margin-bottom: 35px;
+      @include text(
+        $size: 14px,
+        $ff: $font-secondary,
+        $fw: 300,
+        $color: $color-text-light-primary,
+        $lh: 1.71,
+        $ta: center
+      );
+    }
+    &-textbox-time {
+      @include text(
+        $size: 14px,
+        $ff: $font-secondary,
+        $fw: 300,
+        $color: $color-text-light-secondary,
+        $lh: 1.71,
+        $ta: center
+      );
+    }
+  }
+}
+.video-play-btn:hover .video-play-btn-icon {
+  fill: coral;
+}
+
+.video-play-btn:active .video-play-btn-icon {
+  fill: bisque;
+}

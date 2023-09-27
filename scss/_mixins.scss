@@ -1,7 +1,7 @@
 @mixin title(
   $size: 30px,
   $ff: $font-main,
-  $fw: 600,
+  $fw: 500,
   $color: $color-text-dark-primary,
   $lh: normal,
   $ta: center
@@ -46,7 +46,7 @@
   color: $color-text-light-primary;
   object-fit: contain;
   cursor: pointer;
-  transition: transform 500ms;
+  transition: transform 10ms;
   // ===================================== font
   font-family: 'raleway', 'arial', sans-serif;
   font-weight: 800;
@@ -61,14 +61,14 @@
   // ===================================== effects
   &:hover {
     background-color: $color-button-primary;
-    transform: scale(1.05);
+    transform: scale(1.03);
     & .button-text {
       color: $color-text-dark-primary;
     }
   }
   &:active {
     background-color: $color-button-shadows;
-    transform: scale(0.95);
+    transform: scale(0.97);
     & .button-text {
       color: $color-text-light-primary;
     }

@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    // border: 1px solid #000;
     gap: 26px;
   }
   &__item {
@@ -34,28 +33,14 @@
       fill: #555555;
     }
     &-title {
-      @include title(
-        $size: 22px,
-        // $ff: $font-main,
-        // $fw: 600,
-        // $color: $color-text-dark-primary,
-        // $lh: normal,
-        // $ta: center
-      );
+      @include title($size: 22px);
       margin: 12px 19px;
       font-stretch: normal;
       font-style: normal;
       letter-spacing: normal;
     }
     &-text {
-      @include text(
-        $size: 14px,
-        // $ff: $font-secondary,
-        // $fw: 300,
-        // $color: $color-text-dark-secondary,
-        $lh: 1.71,
-        // $ta: center
-      );
+      @include text($size: 14px, $lh: 1.71);
       margin-bottom: 25px;
       font-stretch: normal;
       font-style: normal;

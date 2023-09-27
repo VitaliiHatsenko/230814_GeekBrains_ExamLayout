@@ -310,7 +310,7 @@ h6 {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
-  transition: transform 500ms;
+  transition: transform 10ms;
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -325,14 +325,14 @@ h6 {
 }
 .header__button:hover {
   background-color: #998675;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .header__button:hover .button-text {
   color: #555555;
 }
 .header__button:active {
   background-color: #736357;
-  transform: scale(0.95);
+  transform: scale(0.97);
 }
 .header__button:active .button-text {
   color: #ffffff;
@@ -396,7 +396,7 @@ h6 {
 .activities__item-title {
   font-size: 22px;
   font-family: "raleway", "arial", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #555555;
   line-height: normal;
   text-align: center;
@@ -520,7 +520,7 @@ h6 {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
-  transition: transform 500ms;
+  transition: transform 10ms;
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -534,14 +534,14 @@ h6 {
 }
 .ad__button:hover {
   background-color: #998675;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .ad__button:hover .button-text {
   color: #555555;
 }
 .ad__button:active {
   background-color: #736357;
-  transform: scale(0.95);
+  transform: scale(0.97);
 }
 .ad__button:active .button-text {
   color: #ffffff;
@@ -611,13 +611,14 @@ h6 {
 }
 .our-latsest-projects__picturebox-item {
   background-color: #fbfaf8;
-  width: calc(33.3333333333% - 30px);
+  width: calc(33.33333% - 30px);
   margin: 0 15px 30px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 .our-latsest-projects__picturebox-item-content {
   min-height: 100px;
@@ -717,7 +718,7 @@ h6 {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
-  transition: transform 500ms;
+  transition: transform 10ms;
   font-family: "raleway", "arial", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -731,17 +732,109 @@ h6 {
 }
 .our-latsest-projects__button:hover {
   background-color: #998675;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .our-latsest-projects__button:hover .button-text {
   color: #555555;
 }
 .our-latsest-projects__button:active {
   background-color: #736357;
-  transform: scale(0.95);
+  transform: scale(0.97);
 }
 .our-latsest-projects__button:active .button-text {
   color: #ffffff;
+}
+
+.presentation {
+  height: 705px;
+  border: 1px solid rgb(162, 0, 255);
+}
+.presentation__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.presentation__video-file {
+  width: 100%;
+  height: 705px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.presentation__video-textbox-wrapper {
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.presentation__video-textbox-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  background-color: rgba(17, 17, 17, 0.5);
+  cursor: pointer;
+  transition: transform 400ms ease-out, background-color 400ms ease, border-radius 400ms ease-out;
+}
+.presentation__video-textbox-btn:hover {
+  transform: rotate(360deg) scale(1.1);
+  background-color: rgba(17, 17, 17, 0.7);
+  border-radius: 5%;
+}
+.presentation__video-textbox-btn:hover .presentation__video-icon {
+  fill: #d3c1ad;
+}
+.presentation__video-textbox-btn:active .presentation__video-icon {
+  fill: #ffffff;
+  transform: scale(0.97);
+}
+.presentation__video-icon {
+  margin: auto;
+  fill: #ffffff;
+}
+.presentation__video-textbox-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "raleway", "arial", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  display: block;
+}
+.presentation__video-textbox-text {
+  margin-bottom: 35px;
+  font-size: 14px;
+  font-family: "montserrat", "arial", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.71;
+  text-align: center;
+}
+.presentation__video-textbox-time {
+  font-size: 14px;
+  font-family: "montserrat", "arial", sans-serif;
+  font-weight: 300;
+  color: #c7b299;
+  line-height: 1.71;
+  text-align: center;
+}
+
+.video-play-btn:hover .video-play-btn-icon {
+  fill: coral;
+}
+
+.video-play-btn:active .video-play-btn-icon {
+  fill: bisque;
 }
 
 .main {
@@ -760,7 +853,7 @@ h6 {
 .textbox-title {
   font-size: 30px;
   font-family: "raleway", "arial", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #555555;
   line-height: normal;
   text-align: center;
@@ -774,12 +867,6 @@ h6 {
   color: #8c8c8c;
   line-height: 1.75;
   text-align: center;
-}
-
-.waxom-video-presentation {
-  height: 705px;
-  border: 1px solid rgb(162, 0, 255);
-  background-image: url(/img/background-images/video-presentation.png);
 }
 
 .excellent-for-mobile {

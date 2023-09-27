@@ -68,16 +68,14 @@
 
     &-item {
       background-color: $color-background-secondary;
-      width: calc(100% / 3 - 30px);
+      width: calc(33.33333% - 30px);
       margin: 0 15px 30px 15px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       position: relative;
-
-      // &-pic {
-      // }
+      cursor: pointer;
       &-content {
         min-height: 100px;
         display: flex;
@@ -134,7 +132,6 @@
           border: none;
           cursor: pointer;
           margin: 100px 0 0 0;
-
           &:focus {
             outline: none;
             box-shadow: 0 0 5px 2px #555;
