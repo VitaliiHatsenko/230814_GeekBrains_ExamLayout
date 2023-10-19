@@ -1,40 +1,16 @@
-@import 'variables';
 @import 'zeroing';
 @import 'fonts';
+@import 'variables';
 @import 'mixins';
+@import 'general';
 @import 'header';
 @import 'activities';
 @import 'screenshots';
 @import 'aside';
 @import 'our-latest-projects';
 @import 'presentation';
+@import 'excellent-for-mobile';
 
-// ================================================== general rules
-.main {
-  width: 1920px;
-}
-.container {
-  width: 1170px;
-}
-.textbox {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  &-title {
-    @include title;
-    width: 100%;
-  }
-  &-txt {
-    @include text;
-  }
-}
-
-// ================================================== excellent-for-mobile
-.excellent-for-mobile {
-  height: 695px;
-  border: 1px solid rgb(162, 0, 255);
-  background-color: $color-background-secondary;
-}
 // ================================================== quantities
 .quantities {
   height: 300px;

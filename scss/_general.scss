@@ -1,0 +1,26 @@
+// ================================================== general rules
+.main {
+  width: 1920px;
+}
+
+.section {
+  display: flex;
+}
+
+.container {
+  width: 1171px;
+  margin: auto;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-title {
+    @include title;
+  }
+  &-txt {
+    @include text;
+  }
+}

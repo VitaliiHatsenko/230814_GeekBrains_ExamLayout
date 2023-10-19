@@ -38,7 +38,7 @@
         border-radius 400ms ease-out;
       &:hover {
         transform: rotate(360deg) scale(1.1);
-        background-color: rgba(17, 17, 17, 0.7);
+        background-color: rgba(17, 17, 17, 0.5);
         border-radius: 5%;
       }
       &:hover .presentation__video-icon {
@@ -86,11 +86,4 @@
       );
     }
   }
-}
-.video-play-btn:hover .video-play-btn-icon {
-  fill: coral;
-}
-
-.video-play-btn:active .video-play-btn-icon {
-  fill: bisque;
 }

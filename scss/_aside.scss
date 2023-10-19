@@ -3,9 +3,11 @@
   height: 150px;
   border: 1px solid rgb(0, 255, 4);
   background-image: linear-gradient(to top, #211b19, #4e3427);
+}
+
+.ad__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .ad__wrapper {

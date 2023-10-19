@@ -1,0 +1,40 @@
+// ================================================== excellent-for-mobile section
+.excellent-for-mobile {
+  height: 695px;
+  border: 1px solid rgb(162, 0, 255);
+  background-image: url(/img/background-images/efm-bg.jpg);
+}
+
+.excellent-for-mobile__container {
+  display: flex;
+  justify-content: end;
+}
+.excellent-for-mobile_textbox {
+  width: 660px;
+}
+.excellent-for-mobile_textbox-title {
+  text-align: left;
+}
+.excellent-for-mobile_textbox-text {
+  margin-bottom: 40px;
+  text-align: left;
+}
+// .excellent-for-mobile_textbox-list {
+// }
+.excellent-for-mobile_textbox-list-item {
+  text-align: left;
+  margin-left: 100px;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 2px;
+    left: -50px;
+    background-image: url(/img/icons/arrow-icon.png);
+    background-size: cover;
+  }
+}
