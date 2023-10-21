@@ -10,13 +10,8 @@
 @import 'our-latest-projects';
 @import 'presentation';
 @import 'excellent-for-mobile';
+@import 'quantities';
 
-// ================================================== quantities
-.quantities {
-  height: 300px;
-  border: 1px solid rgb(162, 0, 255);
-  background-image: linear-gradient(to top, #211b19, #4e3427);
-}
 // ================================================== recent-posts
 .recent-posts {
   height: 750px;

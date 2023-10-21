@@ -1,0 +1,72 @@
+// ================================================== quantities
+.quantities {
+  height: 300px;
+  border: 1px solid rgb(162, 0, 255);
+  background-image: linear-gradient(to top, #211b19, #4e3427);
+  display: flex;
+  &__container {
+    width: 920px;
+  }
+  &__wrapper {
+    min-height: 215px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 26px;
+    margin: 0 auto;
+    // padding: 0 60px;
+  }
+  &__item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    &-img-wrapper {
+      height: 44px;
+      width: 60px;
+      margin: 0 auto 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-img {
+      display: block;
+      fill: $color-icon-primary;
+    }
+    &-title {
+      @include title(
+        $size: 48px,
+        $ff: $font-secondary,
+        $fw: 200,
+        $color: $color-text-light-primary,
+        $lh: 0.75,
+        $ta: center
+      );
+      margin-bottom: 21px;
+      transition: transform 10ms;
+    }
+    &-text {
+      @include text($size: 14px, $fw: 300, $lh: 1.43);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $color-text-light-primary;
+    }
+    &:hover .quantities__item-title {
+      color: $color-icon-active;
+      transform: scale(1.03);
+    }
+    &:hover .quantities__item-img {
+      fill: $color-icon-active;
+    }
+    &:hover:after {
+      background-color: $color-icon-active;
+    }
+  }
+}
